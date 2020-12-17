@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="/static/js/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/Semantic/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="/static/cv.css">
-    <link rel="stylesheet" type="text/css" href="/static/cv_print.css">
-    <script src="/static/Semantic/semantic.min.js"></script>
-    <script src="/static/jquery.jqprint-0.3.js"></script>
+    <script src="./static/js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./static/Semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./static/cv.css">
+    <link rel="stylesheet" type="text/css" href="./static/cv_print.css">
+    <script src="./static/Semantic/semantic.min.js"></script>
+    <script src="./static/jquery.jqprint-0.3.js"></script>
     <title>Li Shen's CV</title>
 </head>
 <body>
@@ -15,6 +15,7 @@
 <div id="cv_body">
     <div class="ui horizontal divider"></div>
     <div id="main-content" style="width: 45%">
+
         <div id="content_for_print">
             <div class="ui three column grid">
                 <div class="row" align="center">
@@ -47,7 +48,7 @@
                         </table>
                     </div>
                     <div class="six wide column">
-                        <img src="/media/my_avatar.png" style="width: 40%">
+                        <img src="./media/my_avatar.png" style="width: 40%">
                     </div>
                 </div>
                 <br><br><br><br><br><br><br><br><br>
@@ -330,7 +331,7 @@
     </div>
     <div class="ui horizontal divider"></div>
 
-    <script src="/static/jquery.jqprint-0.3.js"></script>
+    <script src="./static/jquery.jqprint-0.3.js"></script>
     <script src="http://www.jq22.com/jquery/jquery-migrate-1.2.1.min.js"></script>
 
     <div align="center">
@@ -338,13 +339,13 @@
     </div>
 
     <div class="ui horizontal divider"></div>
-    
+
     <script>
-        $('#print_button').on('click', function () {
+
+        $('#print_button_eng').on('click', function () {
             $('#content_for_print').jqprint();
         });
     </script>
-    
 </div>
 
 </body>
